@@ -1,0 +1,77 @@
+
+### Backend Setup
+
+1. Create a virtual environment:
+
+
+```shellscript
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+2. Install dependencies:
+
+
+```shellscript
+pip install -r requirements.txt
+```
+
+3. Run migrations:
+
+
+```shellscript
+python manage.py makemigrations
+python manage.py migrate
+```
+
+4. Start the Django server:
+
+
+```shellscript
+python manage.py runserver
+```
+
+### Frontend Setup
+
+1. Install dependencies:
+
+
+```shellscript
+npm install
+```
+
+2. Start the React development server:
+
+
+```shellscript
+npm start
+```
+
+## Summary
+
+This Energy Consumption Tracker application includes:
+
+### Backend (Django REST Framework)
+
+- User authentication with JWT tokens
+- CSV file upload and processing
+- APIs for energy data retrieval and statistics
+- Database models for users and energy consumption data
+
+
+### Frontend (ReactJS)
+
+- Responsive design with Tailwind CSS
+- User registration and login
+- Dashboard with interactive charts (Chart.js)
+- CSV file upload with validation
+- Data visualization by different time periods
+
+
+The application allows users to:
+
+1. Register and log in
+2. Upload CSV files with energy consumption data
+3. View their energy consumption on interactive charts
+4. Analyze consumption patterns by different time periods
+5. See key statistics like total consumption, daily average, and estimated cost
